@@ -1,0 +1,226 @@
+html>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #199ca5;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.login__title {
+  line-height: .2;
+  margin: 1rem 0 0 0;
+  font-size: 1.8rem;
+  align-self: flex-start;
+}
+
+.login__subtitle {
+  line-height: .5;
+  margin: .5rem 0 2rem 0;
+  padding: 0;
+  align-self: flex-start;
+  color: gray;
+}
+
+.login__email {
+  all: unset;
+  width: 80%;
+  padding: .5rem 1rem;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+
+}
+
+.login__pswrd {
+  all: unset;
+  width: 80%;
+  padding: .5rem 1rem;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+
+}
+
+.login__forgot {
+  align-self: flex-end;
+  color: #106a70;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+.login__forgot:hover {
+  text-decoration: underline;
+}
+
+.login__submit {
+  width: 80%;
+  padding: .5rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+  background-color: #199ca5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login__submit:hover {
+  background-color: #106a70;
+}
+
+.login__signup {
+  color: #106a70;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.login__signup:hover {
+  text-decoration: underline;
+}
+
+
+/* SIGNUP */
+
+
+.signup {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  color: #106a70;
+  background-color: white;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: .6rem;
+  font-size: 1.2rem;
+  color: #199ca5;
+}
+
+.logout:hover {
+  text-decoration: underline;
+  color: #106a70;
+}
+
+.logout__ico {
+  font-size: 2rem;
+  color: #106a70;
+}
+
+
+/* TASKS */
+
+.tasks {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 6rem;
+  box-sizing: border-box;
+}
+
+.tasks__form {
+  min-width: 350px;
+  max-height: 200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.tasks__title {
+  font-size: 2rem;
+  line-height: .5;
+  color: #106a70;
+  font-weight: bolder;
+}
+
+.tasks__table {
+  border-radius: 5px;
+  background-color: white;
+  width: 600px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.tasks__table td {
+  box-sizing: border-box;
+  position: relative;
+  padding: .3rem .5rem;
+  border-radius: 5px;
+  background-color: #c2c2c2;
+}
+
+.tasks__tableHead td {
+  background-color: #106a70;
+  color: white;
+  text-align: center;
+}
+
+.tasks__tableRow {
+  position: relative;
+  box-sizing: border-box;
+}
+
+#delete {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+#delete:hover i{
+  color: rgb(160, 0, 0);
+}
+
+#delete i {
+  font-size: 2rem;
+  color: red;
+}
