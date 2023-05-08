@@ -209,18 +209,39 @@ body {
   box-sizing: border-box;
 }
 
-#delete {
-  display: grid;
-  place-items: center;
-  background-color: white;
+.delete td{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
+  height: 100%;
 }
 
-#delete:hover i{
+#delete {
+  background-color: white;
+}
+
+.remove:hover{
   color: rgb(160, 0, 0);
 }
 
-#delete i {
+.remove {
   font-size: 2rem;
   color: red;
+}
+
+.edit {
+  font-size: 2rem;
+  color: rgb(32, 132, 255);
+}
+
+.edit:hover {
+  font-size: 2rem;
+  color: rgb(0, 0, 188);
+}
+
+.done i{
+  color: green;
+  font-size: 2rem;
 }
