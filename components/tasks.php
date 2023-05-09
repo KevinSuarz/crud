@@ -1,3 +1,6 @@
+<?php 
+  include '../app/db.php';
+?>
 <form action="../app/taskPush.php" class="tasks__form" method="post">
   <h2 class="tasks__title"><i class="fa-solid fa-list-check"></i> Tareas</h2>
   <input type="text" placeholder="Tarea" name="taskTitle" required>
@@ -14,24 +17,22 @@
   </tr>
   <?php
     $result = mysqli_query($conn,"SELECT * FROM tasks");
-    if(isset($_GET)){
+    if(isset($_GET['edit'])){
       $edit = $_GET['edit'];
     };
     while($row = mysqli_fetch_assoc($result)){
-        // var_dump($edit);
-        if(isset($edit)){
+        if(isset($edit) && $edit == $row["id"]){
           echo
-          "<tr class='tasks__tableRow'>
+          "<form class='tasks__tableRow' method='post' action='../app/update.php'>
             <td>".$row["id"]."</td>
-            <td><input type='text' placeholder=".$row["title"]."></td>
-            <td><input type='text' placeholder=".$row["description"]."></td>
+            <td><input type='text' name='editTitle' placeholder=".$row["title"]." required></td>
+            <td><input type='text' name='editDescription' placeholder=".$row["description"]." required></td>
             <td>".$row["creationDate"]."</td>
-            <td id='delete' class='done'>
-              <a href='../pages/bienvenida.php'>
-                <i class='fa-solid fa-square-check'></i>
-              </a>
+            <td id='done' class='done'>
+              <input type='hidden' name='taskId' value='".$row["id"]."'>
+              <input type='submit' value='↑'>
             </td>
-          </tr>";
+          </form>";
           unset($edit);
         }else {
           echo

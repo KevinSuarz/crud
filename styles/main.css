@@ -185,7 +185,7 @@ body {
 .tasks__table {
   border-radius: 5px;
   background-color: white;
-  width: 600px;
+  width: 800px;
   position: relative;
   box-sizing: border-box;
 }
@@ -241,7 +241,16 @@ body {
   color: rgb(0, 0, 188);
 }
 
-.done i{
-  color: green;
-  font-size: 2rem;
+#done {
+  background-color: white;
+}
+
+.done input{
+  padding: .5rem .5rem;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
