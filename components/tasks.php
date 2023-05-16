@@ -1,12 +1,19 @@
 <?php 
   include '../app/db.php';
 ?>
-<form action="../app/taskPush.php" class="tasks__form" method="post">
-  <h2 class="tasks__title"><i class="fa-solid fa-list-check"></i> Tareas</h2>
-  <input type="text" placeholder="Tarea" name="taskTitle" required>
-  <input type="text" placeholder="PDescripción" name="taskDescription" required>
-  <input type="submit" value="+ Crear Tarea">
+<div class="bz">
+  <form action="../app/taskPush.php" class="tasks__form" method="post">
+    <h2 class="tasks__title"><i class="fa-solid fa-list-check"></i> Tareas</h2>
+    <input type="text" placeholder="Tarea" name="taskTitle" required>
+    <input type="text" placeholder="PDescripción" name="taskDescription" required>
+    <input type="submit" value="+ Crear Tarea">
+  </form>
+<form action="../app/buscar.php" class="form__buscador" method="post">
+  <input type="text" placeholder="buscador" class="buscador" name="buscar">
+  <input type="submit" class="lupita" value="p">
 </form>
+</div>
+
 
 <table class="tasks__table">
   <tr class="tasks__tableHead">

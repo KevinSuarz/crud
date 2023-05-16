@@ -254,3 +254,37 @@ body {
   font-size: 1.5rem;
   font-weight: bolder;
 }
+
+/* BUSCADOR */
+
+.bz
+{
+  box-sizing: border-box;
+}
+
+.form__buscador
+{
+  display: flex;
+}
+
+.buscador
+{
+  box-sizing: border-box;
+  all: unset;
+  background-color: white;
+  width: 60%;
+  margin: 10px ;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.196);
+}
+
+.lupita
+{
+  all: unset;
+  background-color: white;
+  padding: 0 1rem;
+  border-radius: 10px;
+  line-height: 0;
+  cursor: pointer;
+}
