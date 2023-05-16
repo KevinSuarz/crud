@@ -8,10 +8,10 @@
     <input type="text" placeholder="PDescripción" name="taskDescription" required>
     <input type="submit" value="+ Crear Tarea">
   </form>
-<form action="../app/buscar.php" class="form__buscador" method="post">
-  <input type="text" placeholder="buscador" class="buscador" name="buscar">
-  <input type="submit" class="lupita" value="p">
-</form>
+  <form action="../app/buscar.php" class="form__buscador" method="post">
+    <input type="text" placeholder="buscador" class="buscador" name="buscar">
+    <input type="submit" class="lupita" value="p">
+  </form>
 </div>
 
 
